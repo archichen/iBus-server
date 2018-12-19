@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IBus</title>
+    <link rel="icon" href={{ url_for('static', filename='icon.ico') }} type="image/x-icon" />
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: "op";
+            src: url("{{ url_for('static', filename='font/oldpress.woff2') }}");
+        }
+
+        @keyframes buttonFlash {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .button {
+            animation: buttonFlash 1.4s ease-out infinite;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<svg id="banner" class="banner" width="100%" height="100%" viewBox="0 0 100% 100%">
+    <polygon fill="red" points="0,0 1200,0 720,1080 0,1080" />
+    <polygon fill="DodgerBlue" points="1200,0 1920,0 1920,1080 720,1080" />
+    <text x="960" y="333" fill="white" style="font-family: op;font-size: 300px;text-anchor: middle;" >IBUS</text>
+    <text x="960" y="410" fill="white" style="font-family: op;font-size: 100px;text-anchor: middle;">We'll go wherever you go</text>
+    <text x="960" y="600" fill="white" style="font-family: op;font-size: 50px;text-anchor: middle">Are u ready for a trip?</text>
+    <text id="button" class="button" x="960" y="840" fill="white" style="font-family: op;font-size: 50px;text-anchor: middle">Let's start!</text>
+</svg>
+<script>
+    document.querySelector("#button").addEventListener("click", () => {
+        window.location="http://www.baidu.com"
+    });
+</script>
+</body>
+</html>

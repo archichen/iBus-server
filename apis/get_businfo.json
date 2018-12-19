@@ -1,0 +1,52 @@
+[
+    {
+        "busName":"10路（西线）",
+        "status":"还有10 站",
+        "terminal":"东南环立交换乘枢纽站"
+    },
+    {
+        "busName":"40路（西线）",
+        "status":"还有10 站",
+        "terminal":"体育中心"
+    },
+    {
+        "busName":"324路",
+        "status":"实时数据失联",
+        "terminal":"汽车北站首末站"
+    },
+    {
+        "busName":"529路",
+        "status":"还有3 站",
+        "terminal":"东方大道首末站"
+    },
+    {
+        "busName":"游3路",
+        "status":"还有7 站",
+        "terminal":"苏州站南广场公交枢纽"
+    },
+    {
+        "busName":"游5路（南线）",
+        "status":"还有2 站",
+        "terminal":"欧尚超市首末站"
+    },
+    {
+        "busName":"6路",
+        "status":"实时数据失联",
+        "terminal":"津梁街首末站"
+    },
+    {
+        "busName":"81路",
+        "status":"还有11 站",
+        "terminal":"相城区职教中心停车场"
+    },
+    {
+        "busName":"快线3号路",
+        "status":"实时数据失联",
+        "terminal":"火车站南广场首末站"
+    },
+    {
+        "busName":"316路",
+        "status":"实时数据失联",
+        "terminal":"官渎里立交换乘枢纽站"
+    }
+]
